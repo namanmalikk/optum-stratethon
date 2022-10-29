@@ -8,9 +8,12 @@ import Conditions from "./scenes/conditions";
 import Immunisations from "./scenes/immunisations";
 import Medications from "./scenes/medications";
 import Observations from "./scenes/observations";
+import { sampleData } from "./data/sampleData";
+import { useState } from "react";
 
 function App() {
   const [theme, colorMode] = useMode();
+  const [patientData,setpatientData]=useState(sampleData);
 
   return (
     <>
@@ -18,11 +21,11 @@ function App() {
        <ThemeProvider theme={theme}>
          <CssBaseline />
         <div className="app" >
-            <Sidebar/>
+            <Sidebar patientData={patientData}/>
           <main className="component">
             <Topbar/>
             <Routes>
-                <Route path="/" element={<Dashboard/>} />
+                <Route path="/" element={<Dashboard patientData={patientData} />} />
                 <Route path="/observations" element={<Observations/>} />
                 <Route path="/immunisations" element={<Immunisations/>} />
                 <Route path="/conditions" element={<Conditions/>} />

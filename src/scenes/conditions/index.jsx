@@ -2,7 +2,7 @@ import React from 'react'
 
 const Conditions = () => {
   return (
-    <div>Conditions</div>
+    <div className='container'>Conditions</div>
   )
 }
 

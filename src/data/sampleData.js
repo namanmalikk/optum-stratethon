@@ -1,6 +1,5 @@
 
-export const mockDataTeam = [
-    {
+export const sampleData = {
         "_id": "634c757dbd95b76bc4f9216a",
         "id": "0b5b572a-bc52-7448-61cf-3b639e194b6f",
         "birthDate": "1989-09-21T00:00:00.000Z",
@@ -9,8 +8,8 @@ export const mockDataTeam = [
         "driversLicence": "S99930070",
         "passport": "X79585760X",
         "prefix": "Mr.",
-        "first": "Murray856",
-        "last": "Johnson679",
+        "first": "Murray",
+        "last": "Johnson",
         "suffix": "",
         "maiden": "",
         "marital": "M",
@@ -1796,4 +1795,3 @@ export const mockDataTeam = [
         "medications": [],
         "__v": 0
      }
-]

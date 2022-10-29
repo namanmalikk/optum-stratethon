@@ -2,7 +2,7 @@ import React from 'react'
 
 const Immunisations = () => {
   return (
-    <div>Immunisations</div>
+    <div className='container'>Immunisations</div>
   )
 }
 

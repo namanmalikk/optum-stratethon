@@ -1,4 +1,3 @@
-import { useState } from "react";
 import { Routes, Route } from "react-router-dom";
 import { CssBaseline, ThemeProvider } from "@mui/material";
 import { ColorModeContext, useMode } from "./theme";
@@ -19,6 +18,7 @@ function App() {
        <ThemeProvider theme={theme}>
          <CssBaseline />
         <div className="app" >
+            <Sidebar/>
           <main className="component">
             <Topbar/>
             <Routes>
